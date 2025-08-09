@@ -1,0 +1,367 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+ 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes fadeInAnimation {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Layout */
+.whole {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Style the main navigation bar */
+.top-nav {
+  background-color: #f8f9fa;
+  padding: 10px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-nav .nav-link {
+  color: #000000;
+  font-weight: 500;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.top-nav .nav-link:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.top-nav img.logo {
+  width: 60px;
+  margin-left: 20px;
+}
+
+/* TourDetails.css */
+
+/* --- Hero Image Overlay --- */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heading {
+  position: absolute;
+  top: 50%;  /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5rem;
+  z-index: 2;
+  text-align: center;
+  text-decoration: none; /* 🔧 Remove underline */
+  padding: 0 20px;
+}
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.itinerary-section {
+  border-left: 5px solid #007BFF; /* You can customize color and thickness */
+  padding-left: 20px;        
+}
+
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+.highlight-box {
+  background-color: #8cb4ca;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0 10px;
+  overflow-wrap: break-word;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heading {
+    font-size: 1.4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+.itenary h3 {
+  font-size: 1.5rem;
+}
+
+.day {
+  background: white;
+  padding: 10px;
+  border-left: 5px solid blue;
+}
+
+.day h4 {
+  font-size: 1.6rem;
+  padding: 10px 0;
+  color: #000;
+}
+
+.day p {
+  font-size: 1.2rem;
+  padding: 10px 0;
+  color: #4b4a4a;
+}
+
+.box {
+  padding: 15px;
+  color: white;
+  border-radius: 5px;
+}
+
+.box-red, .box-orange, .box-green {
+  font-size: 1.5rem;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 12px;
+  min-height: 200px;
+}
+
+.box-red {
+  background-color: #d9534f;
+}
+
+.box-orange {
+  background-color: #f0ad4e;
+}
+
+.box-green {
+  background-color: #5cb85c;
+}
+
+
+.itinerary-section h5 {
+  font-size: 30px;          /* Heading size */
+  font-weight: 500;
+}
+
+/* Optional: Style paragraph text inside Itinerary */
+.itinerary-section p {
+  color: #696969;              /* Slightly lighter than headings */
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/Dal%20lske%20(1).webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 30px;
+  color: #fff;
+  margin-top: 60px;
+  font-size: 1.3rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer h6{
+  font-size: 1.5rem;
+}
+footer ul li {
+  margin-bottom: 8px;
+}
+
+.column {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  margin: 10px;
+}
+
+p {
+  font-size: 1.35rem;
+  margin-bottom: 15px;
+}
+
+.form-container {
+  background-color: #cfd7df;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 700px;
+  margin: 60px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container h2 {
+  color: #3295ff;
+  font-size: 1.75rem;
+}
+
+.form-container p {
+  color: #4a4a4a;
+  font-size: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #1c1c1c;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+.newbtn {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.newbtn:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 1024px) {
+  .heading {
+    font-size: 1.75rem;
+    top: 15%;
+    left: 15%;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .whole {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: row;
+    padding: 10px;
+  }
+  nav .logo {
+    width: 40px;
+  }
+  nav ul li a {
+    font-size: 0.8rem;
+    padding: 6px 9px;
+  }
+  .form-container {
+    padding: 20px;
+  }
+  .form-container h2 {
+    font-size: 1.5rem;
+  }
+  .form-container p,
+  input,
+  select,
+  textarea,
+  .newbtn {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heading {
+    font-size: 1rem;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  nav .logo {
+    width: 30px;
+  }
+  nav ul li a {
+    font-size: 0.8rem;
+  }
+  .form-container {
+    padding: 15px;
+  }
+  .form-container h2 {
+    font-size: 1.25rem;
+  }
+  .form-container p,
+  .newbtn {
+    font-size: 0.9rem;
+  }
+  .column {
+    width: 100%;
+  }
+}

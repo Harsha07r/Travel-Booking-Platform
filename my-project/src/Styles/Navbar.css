@@ -1,0 +1,15 @@
+h3.brand-title, h1.brand-title {
+  font-size: 28px;
+  background: linear-gradient(#79c0f2, #305980);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+
+/* Navbar.css */
+.navbar .nav-link {
+  color:#0c3557;
+  font-size: 1.2rem !important;
+}

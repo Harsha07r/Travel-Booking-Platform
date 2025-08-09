@@ -1,0 +1,22 @@
+.gradient-text {
+background: linear-gradient(#79c0f2, #4a769e);
+ -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-align: center;
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.0rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.0; /* Reduce this value to tighten spacing */
+  z-index: 2;
+}
