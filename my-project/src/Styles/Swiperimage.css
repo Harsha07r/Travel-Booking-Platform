@@ -22,7 +22,7 @@
     left: 0;
     transform: translateY(-50%);
     color: #fff;
-    padding: 0 28px;
+    padding: 0 20px;
     border-radius: 10px;
     font-size: 2.2rem;
     font-weight: 700;
@@ -32,7 +32,7 @@
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
     align-items: flex-start;
   }
 
@@ -48,16 +48,17 @@
     text-align: left;
   }
 
-  @keyframes slideInLeft {
+  /* @keyframes slideInLeft {
     0% {
       opacity: 0;
       transform: translateX(-60px);
     }
+
     100% {
       opacity: 1;
       transform: translateX(0);
     }
-  }
+  } */
 
   @media (max-width: 768px) {
     .banner-text-animated {

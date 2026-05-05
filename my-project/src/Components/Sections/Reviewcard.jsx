@@ -1,7 +1,6 @@
-// src/Components/Reviewcard.jsx
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../Styles/Reviewcard.css'; // Import the CSS file
+import '../../Styles/Reviewcard.css';
 
 const reviewsData = [
   {
@@ -15,7 +14,7 @@ const reviewsData = [
   {
     id: 2,
     stars: 5,
-    quote: "I've traveled with multiple agencies, but RoyalHorizon offered the best experience within budget. Professional coordination and no hidden charges. Kudos!",
+    quote: "I've traveled with multiple agencies, but RoyalHorizon offered the best experience within budget.",
     name: "Geethika Sai",
     title: "Architect",
     avatar: "https://placehold.co/40x40/adb5bd/ffffff?text=MC"
@@ -23,7 +22,7 @@ const reviewsData = [
   {
     id: 3,
     stars: 5,
-    quote: "We had a last-minute change in our dates, and the RoyalHorizon team was super flexible and responsive. Great customer service and well-organized tour.",
+    quote: "We had a last-minute change in our dates, and the RoyalHorizon team was super flexible.",
     name: "Jayasri",
     title: "Home maker",
     avatar: "https://placehold.co/40x40/adb5bd/ffffff?text=ER"
@@ -31,7 +30,7 @@ const reviewsData = [
   {
     id: 4,
     stars: 4,
-    quote: "What I loved most was how they customized our trip based on our pace and interests. We avoided crowds and got to explore hidden gems.",
+    quote: "What I loved most was how they customized our trip based on our pace.",
     name: "Ramakrishna",
     title: "Business Owner",
     avatar: "https://placehold.co/40x40/adb5bd/ffffff?text=JD"
@@ -39,7 +38,7 @@ const reviewsData = [
   {
     id: 5,
     stars: 5,
-    quote: "From the very first call to the final drop-off, RoyalHorizon displayed top-notch professionalism. They were always a step ahead in planning and coordination.",
+    quote: "From the first call to the final drop-off, RoyalHorizon was top-notch.",
     name: "Lokesh",
     title: "Mechanical Engineer",
     avatar: "https://placehold.co/40x40/adb5bd/ffffff?text=DP"
@@ -47,68 +46,49 @@ const reviewsData = [
   {
     id: 6,
     stars: 5,
-    quote: "We traveled with my elderly parents, and RoyalHorizon ensured all comfort and accessibility were in place. A very thoughtful and caring team.",
+    quote: "We traveled with elderly parents, and RoyalHorizon ensured all comfort.",
     name: "Sashank",
     title: "Software Engineer",
     avatar: "https://placehold.co/40x40/adb5bd/ffffff?text=OH"
   }
 ];
 
-const StarRating = ({ count }) => {
-  return (
-    <div>
-      {[...Array(5)].map((_, i) => (
-        <i
-          key={i}
-          className={`bi ${i < count ? 'bi-star-fill text-warning' : 'bi-star text-secondary'} me-1`}
-        ></i>
-      ))}
-    </div>
-  );
-};
+const StarRating = ({ count }) => (
+  <div>
+    {[...Array(5)].map((_, i) => (
+      <i
+        key={i}
+        className={`bi ${i < count ? 'bi-star-fill text-warning' : 'bi-star text-secondary'} me-1`}
+      />
+    ))}
+  </div>
+);
 
 function Reviewcard() {
-  const groupedReviews = [];
+  const desktopSlides = [];
   for (let i = 0; i < reviewsData.length; i += 3) {
-    groupedReviews.push(reviewsData.slice(i, i + 3));
+    desktopSlides.push(reviewsData.slice(i, i + 3));
   }
+
+  const mobileSlides = reviewsData.map(review => [review]);
 
   return (
     <div className="container py-5">
       <h2 className="gradient-text text-center mb-5">What Our Users Say</h2>
-      <div id="reviewCarousel" className="carousel slide" data-bs-ride="carousel">
+
+      {/* ================= DESKTOP CAROUSEL ================= */}
+      <div
+        id="reviewCarouselDesktop"
+        className="carousel slide d-none d-md-block"
+        data-bs-ride="carousel"
+      >
         <div className="carousel-inner">
-          {groupedReviews.map((group, index) => (
-            <div
-              key={index}
-              className={`carousel-item ${index === 0 ? 'active' : ''}`}
-            >
+          {desktopSlides.map((group, index) => (
+            <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
               <div className="row">
-                {group.map((review) => (
+                {group.map(review => (
                   <div key={review.id} className="col-md-4 mb-4">
-                    <div className="card h-100 review-card">
-                      <div className="card-body d-flex flex-column justify-content-between">
-                        <div>
-                          <StarRating count={review.stars} />
-                          <p className="card-text fst-italic mt-3">
-                            "{review.quote}"
-                          </p>
-                        </div>
-                        <div className="d-flex align-items-center mt-4">
-                          <img
-                            src={review.avatar}
-                            alt={review.name}
-                            className="rounded-circle me-3 border"
-                            width="40"
-                            height="40"
-                          />
-                          <div>
-                            <h6 className="mb-0">{review.name}</h6>
-                            <small className="text-light">{review.title}</small>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <ReviewCardItem review={review} />
                   </div>
                 ))}
               </div>
@@ -116,28 +96,66 @@ function Reviewcard() {
           ))}
         </div>
 
-        {/* Carousel Controls */}
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#reviewCarousel"
-          data-bs-slide="prev"
-        >
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#reviewCarousel"
-          data-bs-slide="next"
-        >
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
+        <CarouselControls target="#reviewCarouselDesktop" />
+      </div>
+
+      {/* ================= MOBILE CAROUSEL ================= */}
+      <div
+        id="reviewCarouselMobile"
+        className="carousel slide d-block d-md-none"
+        data-bs-ride="carousel"
+      >
+        <div className="carousel-inner">
+          {mobileSlides.map((group, index) => (
+            <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
+              <div className="row">
+                <div className="col-12">
+                  <ReviewCardItem review={group[0]} />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <CarouselControls target="#reviewCarouselMobile" />
       </div>
     </div>
   );
 }
+
+const ReviewCardItem = ({ review }) => (
+  <div className="card h-100 review-card">
+    <div className="card-body d-flex flex-column justify-content-between">
+      <div>
+        <StarRating count={review.stars} />
+        <p className="card-text fst-italic mt-3">"{review.quote}"</p>
+      </div>
+      <div className="d-flex align-items-center mt-4">
+        <img
+          src={review.avatar}
+          alt={review.name}
+          className="rounded-circle me-3 border"
+          width="40"
+          height="40"
+        />
+        <div>
+          <h6 className="mb-0">{review.name}</h6>
+          <small className="text-light">{review.title}</small>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+const CarouselControls = ({ target }) => (
+  <>
+    <button className="carousel-control-prev" type="button" data-bs-target={target} data-bs-slide="prev">
+      <span className="carousel-control-prev-icon" />
+    </button>
+    <button className="carousel-control-next" type="button" data-bs-target={target} data-bs-slide="next">
+      <span className="carousel-control-next-icon" />
+    </button>
+  </>
+);
 
 export default Reviewcard;

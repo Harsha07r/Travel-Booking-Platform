@@ -1,11 +1,8 @@
 import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import '../../Styles/Navbar.css';
-// main.jsx or index.js
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
-// import logo from '../assets/logo.png'; // Uncomment and correct path when image is available
 
 const scrollToSection = (id) => {
   const el = document.getElementById(id);
@@ -22,9 +19,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-light shadow-sm" role="navigation" aria-label="Main Navigation">
       <div className="container-fluid">
-        {/* Logo or Brand */}
         <Link className="navbar-brand d-flex align-items-center" to="/" aria-label="Home">
-          {/* <img src={logo} alt="Royal Horizon" style={{ height: '40px', marginRight: '10px' }} /> */}
       <h1 className="mb-0 brand-title">Royal Horizon</h1>
           </Link>
 

@@ -2,9 +2,11 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { useNavigate } from "react-router-dom";  // ✅ Import navigation
 
 import "swiper/css";
 import "swiper/css/navigation";
+
 import "swiper/css/pagination";
 
 import '../../Styles/Swipercard.css'; // custom styles
@@ -12,34 +14,40 @@ import '../../Styles/Swipercard.css'; // custom styles
 const cardData = [
   {
     title: "Group Tours",
-    image: "/images/group (2).webp",
+    image: "/images/group.webp",
     description: "We go above and beyond to ensure your comfort by providing exceptional service.",
   },
+
   {
     title: "Best Hotels",
     image: "/images/hotels.webp",
     description: "We go above and beyond to ensure your comfort by providing exceptional service.",
   },
+
   {
     title: "Adventures",
-    image: "/images/adventure 2.webp",
+    image: "/images/adventure-2.webp",
     description: "We specialize in creating customized adventure experiences, lasting memories.",
   },
+
   {
     title: "Piligrimage Tour",
     image: "/images/temple.webp",
     description: "Embark on a Piligrimage tour to reconnect your faith and experience divine serenity.",
   },
+
   {
     title: "Premium Service",
-    image: "/images/ertiga new.webp",
+    image: "/images/ertiga-new.webp",
     description: "We deliver comfort, class, and confidence — with premium vehicles and professional drivers.",
   },
+
   {
     title: "Houseboats",
-    image: "/images/housebat (1).webp",
+    image: "/images/houseboat-1.webp",
     description: "Riverside charm and valley adventures,Experience the perfect blend of nature.",
   },
+
 ];
 
 const SwiperCards = () => {
@@ -58,6 +66,8 @@ const SwiperCards = () => {
         pagination={{ clickable: true }}
         autoplay={{ delay: 8000, disableOnInteraction: false }}
         breakpoints={{
+           0: { slidesPerView: 1 },      // Mobile
+
           640: {
             slidesPerView: 1,
           },
@@ -76,7 +86,8 @@ const SwiperCards = () => {
               <div className="card-body">
                 <h1>{card.title}</h1>
                 <p>{card.description}</p>
-                <button className="explore-btn">Explore</button>
+                <button className="explore-btn" onClick={() => navigate("/tour-packages")}>Explore
+                </button>
               </div>
             </div>
           </SwiperSlide>

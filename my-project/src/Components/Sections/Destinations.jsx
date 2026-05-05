@@ -6,11 +6,11 @@ import Contactform from './Contactform';
 function Destinations() {
   const cardsData = [
     { id: 1, src: "/images/dal-lake.webp", alt: "Dal Lake" },
-    { id: 2, src: "/images/Pahalgam Kashmir Photography (1).webp", alt: "Pahalgam" },
+    { id: 2, src: "/images/Pahalgam.webp", alt: "Pahalgam" },
     { id: 3, src: "/images/gondola.webp", alt: "Gulmarg Gondola" },
     { id: 4, src: "/images/sonamarg.webp", alt: "Sonamarg" },
     { id: 5, src: "/images/ladakh.webp", alt: "Ladakh" },
-    { id: 6, src: "/images/vaishno devi (1).webp", alt: "Vaishno Devi" },
+    { id: 6, src: "/images/vaishnodevi.webp", alt: "Vaishno Devi" },
   ];
     
   return (
@@ -51,4 +51,4 @@ function Destinations() {
   );
 }
 
-export default Destinations;
+export default Destinations; 

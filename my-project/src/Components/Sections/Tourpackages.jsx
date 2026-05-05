@@ -15,7 +15,7 @@ const tours = [
   },
   {
     id: 2,
-    image: '/images/vaishno devi (1).webp',
+    image: '/images/vaishnodevi.webp',
     duration: '4 Night 5 Days',
     location: 'Jammu',
     title: 'Katra-Shivkhori-Kashmir',
@@ -26,12 +26,12 @@ const tours = [
     image: '/images/ladakh.webp',
     duration: '3 Night 4 Days',
     location: 'Leh',
-    title: 'Ladakh Tour',
+    title: 'Rendezvous Ladakh Tour',
     places: 'Leh - Sham Valley - Pangong - Leh',
   },
   {
     id: 4,
-    image: '/images/housebat (1).webp',
+    image: '/images/houseboat-1.webp',
     duration: '3 Night 4 Days',
     location: 'Leh',
     title: 'Kashmir Houseboat Tour',
@@ -42,7 +42,7 @@ const tours = [
     image: '/images/srinagar-honeymoon.webp',
     duration: '3 Night 4 Days',
     location: 'Leh',
-    title: 'Honeymoon Tour',
+    title: 'Kashmir Honeymoon Tour',
     places: 'Leh - Sham Valley - Pangong - Leh',
   },
   {
@@ -69,7 +69,15 @@ const TourPackages = () => {
             className="d-flex justify-content-center"
           >
             <div className="tour-card-wrapper" style={{ width: "38rem" }}>
-              <TourCard {...tour} customRoute={tour.title === 'Katra-Shivkhori-Kashmir' ? '/katra-tour' : tour.title === 'Ladakh Tour' ? '/ladakh-tour' : tour.title === 'Kashmir Houseboat Tour' ? '/houseboat-tour' : tour.title === 'Kashmir Honeymoon Tour' ? '/honeymoon-tour' : tour.title === 'Heavenly Kashmir Tours' ? '/heavenly-tour' : undefined} />
+              <TourCard {...tour} customRoute={
+                tour.title === 'Katra-Shivkhori-Kashmir' ? '/katra-tour' :
+                tour.title === 'Rendezvous Ladakh Tour' ? '/ladakh-tour' :
+                tour.title === 'Kashmir Houseboat Tour' ? '/houseboat-tour' :
+                tour.title === 'Kashmir Honeymoon Tour' ? '/honeymoon-tour' :
+                tour.title === 'Heavenly Kashmir Tours' ? '/heavenly-tour' :
+                tour.title === '5N-6D Kashmir Package' ? '/tour-details' :
+                undefined
+              } />
             </div>
           </Col>
         ))}
@@ -79,3 +87,23 @@ const TourPackages = () => {
 };
 
 export default TourPackages;
+
+
+//IMPORTANT
+//📦 <TourCard {...tour} />
+
+// This syntax is called the spread operator.
+// It automatically passes every property of tour as a separate prop.
+
+{/* <TourCard {...tour} /> */}
+// is equivalent to
+
+{/* <TourCard
+  id={tour.id}
+  image={tour.image}
+  duration={tour.duration}
+  location={tour.location}
+  title={tour.title}
+  places={tour.places}
+/> */}
+

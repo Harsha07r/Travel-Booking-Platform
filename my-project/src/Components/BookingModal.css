@@ -1,0 +1,153 @@
+/* ===== Modal Overlay ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 20, 40, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  backdrop-filter: blur(6px);
+}
+
+/* ===== Modal Box ===== */
+.modal-content {
+  background: linear-gradient(135deg, #ffffff 0%, #eef6ff 100%);
+  border-radius: 18px;
+  padding: 28px 26px;
+  width: 95%;
+  max-width: 480px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  position: relative;
+  animation: popIn 0.25s ease-in-out;
+}
+
+/* Animation */
+@keyframes popIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ===== Close Button ===== */
+.close-btn {
+  position: absolute;
+  right: 14px;
+  top: 10px;
+  background: none;
+  border: none;
+  font-size: 26px;
+  font-weight: bold;
+  color: #0A2A4A;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.close-btn:hover {
+  transform: scale(1.2);
+}
+
+/* ===== Headings ===== */
+.modal-content h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 6px;
+  background: linear-gradient(135deg, #0A2A4A, #4682B4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tour-name {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #333;
+}
+
+/* ===== Form Inputs ===== */
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-content input,
+.modal-content select,
+.modal-content textarea {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1.5px solid #cfd9e3;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+  background: #fff;
+}
+
+.modal-content input:focus,
+.modal-content select:focus,
+.modal-content textarea:focus {
+  border-color: #4682B4;
+  box-shadow: 0 0 0 2px rgba(70, 130, 180, 0.15);
+}
+
+/* Datepicker full width */
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+/* ===== Error Message ===== */
+.error-message {
+  background: #ffe6e6;
+  color: #c0392b;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* ===== Availability text ===== */
+.modal-content p {
+  margin: 0;
+}
+
+/* ===== Submit Button ===== */
+.modal-content button[type="submit"] {
+  margin-top: 8px;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #0A2A4A, #4682B4);
+  color: white;
+  font-size: 1.05rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modal-content button[type="submit"]:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(10, 42, 74, 0.3);
+}
+
+.modal-content button[type="submit"]:disabled {
+  background: gray;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* ===== Mobile Responsiveness ===== */
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 22px 18px;
+  }
+
+  .modal-content h2 {
+    font-size: 1.5rem;
+  }
+}

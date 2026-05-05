@@ -1,0 +1,31 @@
+.bookNowBtn {
+  width: 100%;
+  font-weight: bold;
+  background: #1976d2;
+  border: none;
+  color: white;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(10, 42, 74, 0.15);
+  transition: transform 0.18s cubic-bezier(.4,0,.2,1), box-shadow 0.18s, background 0.3s;
+  margin: 0;
+  display: block;
+  position: static;
+  overflow: hidden;
+}
+.bookNowBtn .arrow {
+  display: inline-block;
+  transform: translateX(-8px);
+  opacity: 0;
+  transition: transform 0.18s, opacity 0.18s;
+}
+.bookNowBtn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 8px 25px rgba(25, 118, 210, 0.18);
+  background: #1251a3;
+}
+.bookNowBtn:hover .arrow {
+  transform: translateX(0);
+  opacity: 1;
+}
