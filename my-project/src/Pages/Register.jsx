@@ -19,7 +19,7 @@ function Register() {
     setLoading(true);
 
     const apiUrl = `${import.meta.env.VITE_API_BASE_URL}/api/auth/register`;
-    console.log("🔗 Making request to:", apiUrl);
+    console.log(" Making request to:", apiUrl);
 
     try {
       const res = await fetch(apiUrl, {
@@ -29,18 +29,18 @@ function Register() {
       });
 
       const data = await res.json();
-      console.log("✅ Response status:", res.status);
-      console.log("📦 Response data:", data);
+      console.log(" Response status:", res.status);
+      console.log(" Response data:", data);
 
       if (!res.ok) {
         alert(data.message || 'Registration failed');
       } else {
         alert('Registered successfully!');
         setForm({ name: '', email: '', password: '' });
-        navigate('/login'); // ✅ Redirect to login after success
+        navigate('/login'); //  Redirect to login after success
       }
     } catch (err) {
-      console.error("🚨 Error during registration:", err);
+      console.error(" Error during registration:", err);
       alert('Something went wrong. Please try again later.');
     }
 

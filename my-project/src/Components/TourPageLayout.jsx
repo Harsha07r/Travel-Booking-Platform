@@ -1,8 +1,7 @@
-// src/Components/Layouts/TourPageLayout.jsx
 
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import '../../Styles/TourDetails.css'; // Your existing CSS
+import '../../Styles/TourDetails.css'; 
 
 const TourPageLayout = ({ tour }) => {
   if (!tour) {

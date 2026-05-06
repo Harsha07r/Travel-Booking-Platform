@@ -3,7 +3,6 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import './BookingModal.css';
 
-/* Safe API Base */
 const API_BASE = import.meta.env.VITE_API_URL || "";
 const API = API_BASE.replace(/\/$/, '');
 
@@ -29,7 +28,6 @@ export default function BookingModal({
 
   const availableSpots = capacity - bookedCount;
 
-  /* Reset when modal closes */
   useEffect(() => {
     if (!isOpen) {
       setDate(null);
@@ -44,7 +42,6 @@ export default function BookingModal({
     }
   }, [isOpen]);
 
-  /* Availability Check */
   useEffect(() => {
     if (!tourId || !date) return;
 
@@ -78,13 +75,11 @@ export default function BookingModal({
     fetchAvailability();
   }, [date, tourId]);
 
-  /* Submit Booking */
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
     setError(null);
 
-    // Extra validation safety
     if (!tourId) return fail("Tour ID missing. Refresh page.");
     if (!date) return fail("Please select a travel date.");
     if (!/^[0-9]{7,15}$/.test(phone)) return fail("Enter valid phone number.");

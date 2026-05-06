@@ -35,7 +35,6 @@ const AdminLogin = () => {
         }
       );
 
-      // ✅ LOGIN SUCCESS
       localStorage.setItem('adminToken', response.data.token);
       localStorage.setItem('adminInfo', JSON.stringify(response.data.admin));
 

@@ -10,7 +10,6 @@ export const AuthProvider = ({ children }) => {
     const token = localStorage.getItem('token');
     if (token) {
       setIsLoggedIn(true);
-      // Try to decode user name from JWT payload (base64 middle part)
       try {
         const payload = JSON.parse(atob(token.split('.')[1]));
         setUser({ email: payload.email, id: payload.userId, name: payload.name, profilePhoto: payload.profilePhoto });

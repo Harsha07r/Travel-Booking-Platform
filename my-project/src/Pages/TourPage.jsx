@@ -37,17 +37,14 @@ const TourPage = ({ image, duration, location, title, overview, itinerary }) => 
         </div>
       </Container>
 
-      {/* ✅ Booking Modal */}
       <BookingModal
         isOpen={showBookingModal}
         onClose={() => setShowBookingModal(false)}
-        tourId={tourIds[title]}   // Always resolves correctly now
+        tourId={tourIds[title]}   
         tourName={title}
         onBooked={handleBookingSuccess}
       />
 
-      {/* ✅ Book Now Section */}
-    {/* Prominent Book Now Section */}
 <Container id="booking-section" className="mb-5 text-center">
   <div
     className="booking-cta p-5 rounded-4 shadow-lg"
@@ -58,7 +55,6 @@ const TourPage = ({ image, duration, location, title, overview, itinerary }) => 
       overflow: 'hidden'
     }}
   >
-    {/* Background overlay */}
     <div
       style={{
         position: 'absolute',
@@ -72,7 +68,6 @@ const TourPage = ({ image, duration, location, title, overview, itinerary }) => 
       }}
     ></div>
 
-    {/* Content */}
     <div style={{ position: 'relative', zIndex: 2 }}>
       <h2
         className="mb-3"
@@ -119,7 +114,7 @@ const TourPage = ({ image, duration, location, title, overview, itinerary }) => 
           e.target.style.transform = 'scale(1)';
           e.target.style.boxShadow = '0 8px 32px rgba(10, 42, 74, 0.18)';
         }}
-        onClick={() => setShowBookingModal(true)}  // ✅ Modal trigger stays correct
+        onClick={() => setShowBookingModal(true)} 
       >
         Book Now - Limited Seats Available!
       </Button>
