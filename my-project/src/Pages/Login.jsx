@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Button, Container } from 'react-bootstrap';
+import { useAuth } from '../Contexts/AuthContext.jsx';
 
 function Login() {
   const [form, setForm] = useState({ email: '', password: '' });
@@ -10,6 +10,7 @@ function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const [showBookingModal, setShowBookingModal] = useState(false);
   const navigate = useNavigate();
+  const { login } = useAuth();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -31,7 +32,7 @@ function Login() {
       if (!res.ok) {
         toast.error(data.message || 'Login failed');
       } else if (data.token) {
-        localStorage.setItem('token', data.token);
+        login(data.token, data.user);
         toast.success('Login successful!');
         setTimeout(() => navigate('/'), 1500); // ✅ Redirect to home page
       }
