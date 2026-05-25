@@ -21,7 +21,7 @@ function Login() {
     setLoading(true);
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/auth/login`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
@@ -34,7 +34,7 @@ function Login() {
       } else if (data.token) {
         login(data.token, data.user);
         toast.success('Login successful!');
-        setTimeout(() => navigate('/'), 1500); // ✅ Redirect to home page
+        setTimeout(() => navigate('/'), 1500); 
       }
     } catch (err) {
       toast.error('Something went wrong. Please try again later.');

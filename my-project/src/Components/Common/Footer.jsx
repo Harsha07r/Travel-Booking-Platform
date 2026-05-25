@@ -1,18 +1,8 @@
 import React from 'react';
 import '../../Styles/Footer.css';
 import { 
-  FaFacebookF, 
-  FaTwitter, 
-  FaInstagram,
-  FaBuilding,
-  FaBriefcase,
-  FaShieldAlt,
-  FaPhoneAlt,
-  FaMapMarkerAlt,
-  FaHeart,
-  FaMountain,
-  FaWater,
-  FaPrayingHands
+  FaFacebookF, FaTwitter, FaInstagram, FaBuilding, FaBriefcase,FaShieldAlt,FaPhoneAlt,FaMapMarkerAlt,FaHeart,
+ FaMountain, FaWater, FaPrayingHands
 } from 'react-icons/fa';
 
 function Footer() {
@@ -77,9 +67,9 @@ function Footer() {
             </ul>
           </div>
         </div>
-          <div className="footer-bottom">
-            &copy; {new Date().getFullYear()} Royal Horizon. All rights reserved.
-          </div>
+<div className="footer-bottom">
+  &copy; 2024 Royal Horizon. All rights reserved.
+</div>
         </div>
     </footer>
   );

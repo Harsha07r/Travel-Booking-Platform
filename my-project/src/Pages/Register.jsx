@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
 function Register() {
   const [form, setForm] = useState({ name: '', email: '', password: '' });
   const [loading, setLoading] = useState(false);
@@ -18,7 +17,7 @@ function Register() {
     e.preventDefault();
     setLoading(true);
 
-    const apiUrl = `${import.meta.env.VITE_API_BASE_URL}/api/auth/register`;
+    const apiUrl = `${import.meta.env.VITE_API_URL}/api/auth/register`;
     console.log(" Making request to:", apiUrl);
 
     try {

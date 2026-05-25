@@ -41,8 +41,7 @@ export default function BookingModal({
       setError(null);
     }
   }, [isOpen]);
-
-  useEffect(() => {
+ useEffect(() => {
     if (!tourId || !date) return;
 
     const fetchAvailability = async () => {
@@ -75,11 +74,13 @@ export default function BookingModal({
     fetchAvailability();
   }, [date, tourId]);
 
+  /* Submit Booking */
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
     setError(null);
 
+    // Extra validation safety
     if (!tourId) return fail("Tour ID missing. Refresh page.");
     if (!date) return fail("Please select a travel date.");
     if (!/^[0-9]{7,15}$/.test(phone)) return fail("Enter valid phone number.");
@@ -103,7 +104,7 @@ export default function BookingModal({
     };
 
     try {
-      const res = await fetch(`${API}/api/bookings/create`, {
+      const res = await fetch(`${API}/api/bookings`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
