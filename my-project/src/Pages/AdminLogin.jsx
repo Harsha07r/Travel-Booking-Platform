@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../Styles/AdminLogin.css';
 
+const BASE_URL = import.meta.env.VITE_API_URL.replace(/\/$/, '');
+
 const AdminLogin = () => {
   const navigate = useNavigate();
 
@@ -15,7 +17,7 @@ const AdminLogin = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    setCredentials(prev => ({
+    setCredentials((prev) => ({
       ...prev,
       [e.target.name]: e.target.value
     }));
@@ -23,26 +25,42 @@ const AdminLogin = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     setLoading(true);
     setError('');
 
     try {
       const response = await axios.post(
-        'http://localhost:5000/api/admin/login',
+        `${BASE_URL}/api/admin/login`,
         {
-          email: credentials.email,
+          email: credentials.email.trim().toLowerCase(),
           password: credentials.password
         }
       );
 
-      localStorage.setItem('adminToken', response.data.token);
-      localStorage.setItem('adminInfo', JSON.stringify(response.data.admin));
+      console.log('Admin login response:', response.data);
+
+      localStorage.setItem(
+        'adminToken',
+        response.data.token
+      );
+
+      localStorage.setItem(
+        'adminInfo',
+        JSON.stringify(response.data.admin)
+      );
 
       navigate('/admin/dashboard');
 
     } catch (err) {
-      console.error('Login error:', err);
-      setError(err.response?.data?.message || 'Login failed. Please try again.');
+      console.error('Admin login error:', err);
+
+      setError(
+        err.response?.data?.message ||
+        err.message ||
+        'Login failed. Please try again.'
+      );
+
     } finally {
       setLoading(false);
     }
@@ -51,20 +69,26 @@ const AdminLogin = () => {
   return (
     <div className="admin-login-container">
       <div className="admin-login-card">
+
         <div className="admin-login-header">
-          <h1> Admin Login</h1>
+          <h1>Admin Login</h1>
           <p>Royal Horizon – Admin Dashboard</p>
         </div>
 
         {error && (
           <div className="error-alert">
-             {error}
+            {error}
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="admin-login-form">
+        <form
+          onSubmit={handleSubmit}
+          className="admin-login-form"
+        >
+
           <div className="form-group">
             <label>Email</label>
+
             <input
               type="email"
               name="email"
@@ -78,6 +102,7 @@ const AdminLogin = () => {
 
           <div className="form-group">
             <label>Password</label>
+
             <input
               type="password"
               name="password"
@@ -94,13 +119,19 @@ const AdminLogin = () => {
             className="login-btn"
             disabled={loading}
           >
-            {loading ? '🔄 Logging in...' : '🚀 Login'}
+            {loading
+              ? 'Logging in...'
+              : 'Login'}
           </button>
+
         </form>
 
         <div className="admin-login-footer">
-          <p>Protected area — Authorized personnel only</p>
+          <p>
+            Protected area — Authorized personnel only
+          </p>
         </div>
+
       </div>
     </div>
   );
