@@ -1,8 +1,16 @@
+const API_URL = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000').replace(/\/$/, '');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   poweredByHeader: false,
+
+  // The admin panel calls /api/... on this same domain and Next forwards it to the backend.
+  // That keeps the login cookies first-party, so they work in every browser.
+  async rewrites() {
+    return [{ source: '/api/:path*', destination: `${API_URL}/api/:path*` }];
+  },
 
   // Old React-app URLs -> new tour pages, so existing links and Google results keep working.
   async redirects() {

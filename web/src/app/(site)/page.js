@@ -7,6 +7,7 @@ import { DESTINATIONS, OFFERINGS, REVIEWS, SITE } from '@/lib/site';
 
 export const metadata = { alternates: { canonical: '/' } };
 
+
 export default async function HomePage() {
   const tours = await getTours();
 
@@ -14,19 +15,24 @@ export default async function HomePage() {
     <>
       <section className="hero">
         <div className="hero__media">
-          <Image
-            src="/images/kashmir.webp"
-            alt="Snow-capped mountains above a green valley in Kashmir"
-            fill
-            priority
-            sizes="100vw"
-            style={{ objectFit: 'cover' }}
-          />
+          {/* Mirrored in CSS so the boat sits to the right, clear of the headline. */}
+          <div className="hero__photo">
+            <Image
+              src="/images/hero-dal-lake.webp"
+              alt="A shikara gliding across the still waters of Dal Lake, Srinagar"
+              fill
+              priority
+              sizes="100vw"
+              style={{ objectFit: 'cover', objectPosition: 'center 62%' }}
+            />
+          </div>
         </div>
         <div className="container">
           <div className="hero__content">
             <span className="eyebrow">Welcome to {SITE.name}</span>
-            <h1>Experience the Serenity</h1>
+            <h1>
+              Experience the <em>Serenity</em>
+            </h1>
             <p className="lead">{SITE.tagline}. Comfortable stays, private vehicles and a team that is with you throughout.</p>
             <div className="hero__actions">
               <Link href="/tours" className="btn">
@@ -118,7 +124,10 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="section dark" id="enquire" aria-labelledby="enquire-title">
+      <section className="section dark enquire-section" id="enquire" aria-labelledby="enquire-title">
+        <div className="enquire-section__bg" aria-hidden="true">
+          <Image src="/images/hero-ladakh-night.webp" alt="" fill sizes="100vw" style={{ objectFit: 'cover', objectPosition: 'center 40%' }} />
+        </div>
         <div className="container contact-layout">
           <div>
             <span className="eyebrow">Plan your journey</span>

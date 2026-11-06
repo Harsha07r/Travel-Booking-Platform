@@ -21,7 +21,14 @@ const toCard = ({ slug, title, destination, category, durationDays, summary, her
 
 async function api(path) {
   const res = await fetch(`${API_URL}${path}`, { signal: AbortSignal.timeout(15000) });
-  if (res.status === 404) return null;
+  if (res.status === 404) {
+    // Only the new API's explicit JSON "Tour not found" means the tour was removed.
+    // Any other 404 (for example an older backend without /api/tours) means "API
+    // unavailable", so the caller falls back to the bundled tours.
+    const body = await res.json().catch(() => null);
+    if (body?.message === 'Tour not found') return null;
+    throw new Error('Tours API route unavailable');
+  }
   if (!res.ok) throw new Error(`API ${res.status}`);
   return res.json();
 }
