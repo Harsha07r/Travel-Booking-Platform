@@ -1,0 +1,336 @@
+[
+  {
+    "slug": "kashmir-5n-6d-package",
+    "legacyId": "5N-6D Kashmir Package",
+    "title": "5N-6D Kashmir Package",
+    "destination": "Kashmir",
+    "category": "Leisure",
+    "durationDays": 6,
+    "summary": "Six days across Srinagar, Sonamarg, Pahalgam and Gulmarg, with a houseboat stay on Dal Lake.",
+    "description": "Kashmir holiday tour is incomplete without a houseboat stay in Srinagar Dal Lake. Enjoy and experience a unique stay at the finest houseboats on the popular Dal and Nigeen Lake.",
+    "highlights": [
+      "Houseboat stay on Dal Lake",
+      "Shikara ride",
+      "Sonamarg, the Meadow of Gold",
+      "Pahalgam and saffron fields",
+      "Gulmarg Gondola",
+      "Mughal Gardens"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Srinagar",
+        "description": "Arrival in Srinagar. Transfer to houseboat and enjoy Shikara ride."
+      },
+      {
+        "day": 2,
+        "title": "Srinagar - Sonamarg",
+        "description": "Full day trip to Sonamarg – The Meadow of Gold."
+      },
+      {
+        "day": 3,
+        "title": "Srinagar - Pahalgam",
+        "description": "Visit Awantipura ruins, saffron fields. Overnight in Pahalgam."
+      },
+      {
+        "day": 4,
+        "title": "Pahalgam - Srinagar",
+        "description": "Mughal Gardens sightseeing."
+      },
+      {
+        "day": 5,
+        "title": "Srinagar - Gulmarg",
+        "description": "Gondola ride & sightseeing."
+      },
+      {
+        "day": 6,
+        "title": "Departure",
+        "description": "Transfer to airport."
+      }
+    ],
+    "inclusions": [],
+    "exclusions": [],
+    "heroImage": {
+      "url": "/images/srinagar.webp",
+      "alt": "Houseboats and shikaras on Dal Lake, Srinagar"
+    },
+    "gallery": [],
+    "faqs": [],
+    "seo": {},
+    "isPublished": true,
+    "isFeatured": true,
+    "sortOrder": 1
+  },
+  {
+    "slug": "katra-shivkhori-kashmir",
+    "legacyId": "Katra-Shivkhori-Kashmir",
+    "title": "Katra-Shivkhori-Kashmir",
+    "destination": "Katra & Kashmir",
+    "category": "Pilgrimage",
+    "durationDays": 6,
+    "summary": "Combine the Shivkhori cave temple near Katra with Srinagar and Gulmarg, ideal after Vaishno Devi darshan.",
+    "description": "Take this opportunity to explore the paradisiacal Vale of Kashmir with the 4 nights 5 days Katra-Kashmir package ex Katra. The popular package covers the cities of Shivkhori, Srinagar, and Gulmarg. The Kashmir tour itinerary begins with a pick-up from Katra and is ideal for those who wish to head to Kashmir after their Vaishno Devi Darshan.",
+    "highlights": [
+      "Shivkhori cave temple",
+      "Patnitop views",
+      "Srinagar Mughal Gardens",
+      "Gulmarg meadows"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Katra - Shivkhori - Katra (70 Kms One Way, Approx. 3 Hours’ Drive)",
+        "description": "Pickup from Katra and proceed for an excursion to Shivkhori temple, which is around 70 km (3 hours’ drive each way). \"Shivkhori\" means the cave of Lord Shiva. On the way, visit Aghar Jitto (6 km from Katra), a shrine dedicated to revolutionary Baba Jitto, and Nau Deviyan (10 km from Katra). Upon reaching Shivkhori, a 4 km steep walk leads to the holy Shivling. The yatra and darshan can take between 1.5 to 3 hours. After darshan, return to the starting point and get transferred back to the hotel for an overnight stay in Katra."
+      },
+      {
+        "day": 2,
+        "title": "Katra – Srinagar (270 Kms, Approx. 7 Hours’ Drive)",
+        "description": "Early morning, check out from the hotel in Katra and proceed towards Srinagar. Enroute, enjoy a sightseeing tour of Patnitop and admire the splendid views. After reaching Srinagar, check in to the hotel, freshen up, and enjoy a delicious dinner. Overnight stay in Srinagar."
+      },
+      {
+        "day": 3,
+        "title": "Srinagar Local Sightseeing",
+        "description": "After a healthy breakfast at the houseboat, visit the famous Mughal Gardens: Chashma Shahi, Nishat, and Shalimar, which were laid out in the 16th century along the banks of Dal Lake. Also visit Pari Mahal and the Botanical Garden. In the evening, explore the local markets. Overnight stay at the hotel in Srinagar."
+      },
+      {
+        "day": 4,
+        "title": "Srinagar - Gulmarg - Srinagar",
+        "description": "Early morning, proceed to Gulmarg, passing willow trees, fast-flowing streams, and lush green meadows. Gulmarg, known as the \"Meadow of Flowers,\" offers a breathtaking view of snow-capped peaks covered with dense forests. Enjoy pony rides (at your own expense) or take a ride on the Gondola lift (at your own expense). Return to Srinagar in the evening and stay overnight at the hotel."
+      },
+      {
+        "day": 5,
+        "title": "Srinagar - Katra",
+        "description": "After breakfast, check out and depart for Katra. En route, enjoy the scenic beauty of the Kashmir Valley. Upon reaching Katra, transfer to your hotel or onward journey location."
+      },
+      {
+        "day": 6,
+        "title": "Srinagar - Airport",
+        "description": "After breakfast transfer to Srinagar Airport with Sweet holiday memories."
+      }
+    ],
+    "inclusions": [],
+    "exclusions": [],
+    "heroImage": {
+      "url": "/images/vaishnodevi.webp",
+      "alt": "Temple in Katra on the way to Vaishno Devi"
+    },
+    "gallery": [],
+    "faqs": [],
+    "seo": {},
+    "isPublished": true,
+    "isFeatured": true,
+    "sortOrder": 2
+  },
+  {
+    "slug": "rendezvous-ladakh-tour",
+    "legacyId": "Rendezvous Ladakh Tour",
+    "title": "Rendezvous Ladakh Tour",
+    "destination": "Ladakh",
+    "category": "Adventure",
+    "durationDays": 4,
+    "summary": "Four days in Leh, Sham Valley and Pangong Lake, high in the Karakoram and Himalayan ranges.",
+    "description": "Ladakh lies in the north-east region of India and is surrounded by the world’s highest mountain ranges, Karakoram and Great Himalayas. The Ladakh district occupied Kashmir in the west and China in the north. Ladakh is an exotic destination considered as the highest plateau lying at an altitude of 9, 800 ft. Ladakh is the 3rd province of Kashmir Valley.",
+    "highlights": [
+      "Leh Palace and Shanti Stupa",
+      "Sham Valley and Magnetic Hill",
+      "Pangong Lake",
+      "Gurudwara Pathar Sahib"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival at Leh Airport",
+        "description": "Arrival at Leh airport and transferred to the Hotel. Complete day for Acclimatize. Later evening visit to Leh Market, Leh Palace and Shanti Stupa. O/N Leh."
+      },
+      {
+        "day": 2,
+        "title": "Leh - Sham Valley",
+        "description": "After breakfast, drive to Sham Valley. Visit Gurudwara Pathar Sahib, Magnetic Hill, and the confluence of Zanskar and Indus rivers. Return to Leh for overnight stay."
+      },
+      {
+        "day": 3,
+        "title": "Leh - Pangong Lake - Leh",
+        "description": "After early Breakfast leave for Pangong Lake (14,500 ft) through Changla Pass 17,350 ft, 3rd highest motorable road in the world. Enjoy the beauty of the lake on the Banks of pangong while appreciating the changing Colors and fascinating high altitude of the Lake. Drive back to Leh by the same route. O/N Leh."
+      },
+      {
+        "day": 4,
+        "title": "Leh Airport",
+        "description": "Early morning transfer to Leh airport to board flight back to destination. Journey Ends."
+      }
+    ],
+    "inclusions": [],
+    "exclusions": [],
+    "heroImage": {
+      "url": "/images/ladakh.webp",
+      "alt": "Mountain landscape near Leh, Ladakh"
+    },
+    "gallery": [],
+    "faqs": [],
+    "seo": {},
+    "isPublished": true,
+    "isFeatured": true,
+    "sortOrder": 3
+  },
+  {
+    "slug": "kashmir-houseboat-tour",
+    "legacyId": "Kashmir Houseboat Tour",
+    "title": "Kashmir Houseboat Tour",
+    "destination": "Kashmir",
+    "category": "Leisure",
+    "durationDays": 5,
+    "summary": "A relaxed Kashmir trip through Gulmarg and Pahalgam, with the houseboat experience of Dal Lake.",
+    "description": "Kashmir holiday tour is incomplete without a houseboat stay in Srinagar Dal Lake. Enjoy and experience a unique stay at the finest houseboats on the popular Dal and Nigeen Lake in Srinagar. Our Kashmir Houseboat tour packages enables you to explore and enjoy authentic Kashmiri flavor with an experience of lifetime.",
+    "highlights": [
+      "Houseboats of Dal and Nigeen Lake",
+      "Gulmarg Gondola",
+      "Pahalgam at leisure"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Srinagar",
+        "description": "On arrival Srinagar airport, welcome by our representative and transfer to the Gulmarg. Located at a distance of 60 km from Srinagar airport, Arrive Gulmarg, check in to the hotel. Gulmarg is one of the best Ski destinations in India.Gulmarg – The ‘Heartland of Winter sports’, Gulmarg is where all the enjoyment happens. The extremely first ski resort was established here in 1927 and ever since Gulmarg has been an epitome of skiing in the country. The town also takes wonderful satisfaction in owning Asia’s largest and also world’s second largest cable car project called Gulmarg Gondola. It connects Gulmarg with Aparwath Hill, where one can ski down on a long snow-trail. Shark Fin is one more brilliant area for powder skiing in the town. Gulmarg also boasts regarding being the longest Golf Course in India. Set against a beautiful backdrop, it attracts a large number of visitors."
+      },
+      {
+        "day": 2,
+        "title": "Gulmarg",
+        "description": "Gulmarg Gondola in Gulmarg – Jammu & Kashmir is just one of the world’s highest operating cable vehicles. Greater lines include the Dagu Glacier Gondola in Sichuan, China which gets to 4843 m, Jade Dragon in Yunnan, and the Mi Teleferico in between El Alto as well as La Paz, in Bolivia. Cable car will certainly take about 12 to 15 minutes to get to one phase to another phase."
+      },
+      {
+        "day": 3,
+        "title": "Gulmarg – Pahalgam (150 km, 5 hrs Drive)",
+        "description": "After breakfast check out from the hotel and transfer to Pahalgam. Located at a distance of 150 kms from Gulmarg, Arrive Pahalgam, and check in into the hotel. Day free at leisure. Overnight stay at hotel."
+      },
+      {
+        "day": 4,
+        "title": "Pahalgam",
+        "description": "After breakfast visit local sightseeing of Pahalgam. Visit Aru valley, Chandanwari & Betaab valley (On direct payment)."
+      },
+      {
+        "day": 5,
+        "title": "Pahalgam – Srinagar (96kms, 3 hrs Drive)",
+        "description": "Back to home."
+      }
+    ],
+    "inclusions": [],
+    "exclusions": [],
+    "heroImage": {
+      "url": "/images/houseboat-1.webp",
+      "alt": "A traditional houseboat on Dal Lake"
+    },
+    "gallery": [],
+    "faqs": [],
+    "seo": {},
+    "isPublished": true,
+    "isFeatured": false,
+    "sortOrder": 4
+  },
+  {
+    "slug": "kashmir-honeymoon-tour",
+    "legacyId": "Kashmir Honeymoon Tour",
+    "title": "Kashmir Honeymoon Tour",
+    "destination": "Kashmir",
+    "category": "Honeymoon",
+    "durationDays": 5,
+    "summary": "A romantic Kashmir getaway through Gulmarg and Pahalgam, built for couples.",
+    "description": "Kashmir holiday tour is incomplete without a houseboat stay in Srinagar Dal Lake. Enjoy and experience a unique stay at the finest houseboats on the popular Dal and Nigeen Lake in Srinagar. Our Kashmir Houseboat tour packages enables you to explore and enjoy authentic Kashmiri flavor with an experience of lifetime.",
+    "highlights": [
+      "Gulmarg Gondola",
+      "Pahalgam valley",
+      "Dal Lake houseboat stay"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Srinagar",
+        "description": "On arrival Srinagar airport, welcome by our representative and transfer to the Gulmarg. Located at a distance of 60 km from Srinagar airport, Arrive Gulmarg, check in to the hotel. Gulmarg is one of the best Ski destinations in India.Gulmarg – The ‘Heartland of Winter sports’, Gulmarg is where all the enjoyment happens. The extremely first ski resort was established here in 1927 and ever since Gulmarg has been an epitome of skiing in the country. The town also takes wonderful satisfaction in owning Asia’s largest and also world’s second largest cable car project called Gulmarg Gondola. It connects Gulmarg with Aparwath Hill, where one can ski down on a long snow-trail. Shark Fin is one more brilliant area for powder skiing in the town. Gulmarg also boasts regarding being the longest Golf Course in India. Set against a beautiful backdrop, it attracts a large number of visitors."
+      },
+      {
+        "day": 2,
+        "title": "Gulmarg",
+        "description": "Gulmarg Gondola in Gulmarg – Jammu & Kashmir is just one of the world’s highest operating cable vehicles. Greater lines include the Dagu Glacier Gondola in Sichuan, China which gets to 4843 m, Jade Dragon in Yunnan, and the Mi Teleferico in between El Alto as well as La Paz, in Bolivia. Cable car will certainly take about 12 to 15 minutes to get to one phase to another phase."
+      },
+      {
+        "day": 3,
+        "title": "Gulmarg – Pahalgam (150 km, 5 hrs Drive)",
+        "description": "After breakfast check out from the hotel and transfer to Pahalgam. Located at a distance of 150 kms from Gulmarg, Arrive Pahalgam, and check in into the hotel. Day free at leisure. Overnight stay at hotel."
+      },
+      {
+        "day": 4,
+        "title": "Pahalgam",
+        "description": "After breakfast visit local sightseeing of Pahalgam. Visit Aru valley, Chandanwari & Betaab valley (On direct payment)."
+      },
+      {
+        "day": 5,
+        "title": "Pahalgam – Srinagar (96kms, 3 hrs Drive)",
+        "description": "Back to home."
+      }
+    ],
+    "inclusions": [],
+    "exclusions": [],
+    "heroImage": {
+      "url": "/images/srinagar-honeymoon.webp",
+      "alt": "Couple on a shikara at Dal Lake, Srinagar"
+    },
+    "gallery": [],
+    "faqs": [],
+    "seo": {},
+    "isPublished": true,
+    "isFeatured": false,
+    "sortOrder": 5
+  },
+  {
+    "slug": "heavenly-kashmir-tours",
+    "legacyId": "Heavenly Tours",
+    "title": "Heavenly Kashmir Tours",
+    "destination": "Kashmir",
+    "category": "Leisure",
+    "durationDays": 5,
+    "summary": "Srinagar, Sonmarg and Gulmarg in a short trip covering the valley’s best-known sights.",
+    "description": "Kashmir is a state which is equally rich in cultural and natural wonders along with the myriad of history and political past that this state is home to. This state provides unique experiences to its tourists in the form of spicy native food along with a variety of teas, long walks or a jagged trekking experience on the many mountains in the region, marvelling at the cozy houseboats on the lakes of Srinagar and visiting the many pilgrimage sites, temples and religious and spiritual centres that are present throughout the state.",
+    "highlights": [
+      "Mughal Gardens",
+      "Sonmarg, the Meadow of Gold",
+      "Gulmarg"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Srinagar -Airport",
+        "description": "Our services starts upon your arrival at Srinagar, you will be greeted by our representative and transfers to Hotel. Afternoon .Visit to famous Mughal Gardens Chashma Shahi, Nishat, Shalimar Mughal laid out in the 16th century & these fall along the bank of Dal-lake in the heart of Srinagar city .Pari Mahal, Botanical Garden, evening visit Market, overnight stay at Hotel."
+      },
+      {
+        "day": 2,
+        "title": "Srinagar – Sonmarg – Srinagar 168 Km",
+        "description": "After breakfast, full day excursion to Sonmarg which is the most beautiful drive from Srinagar. On the way we stop at many beautiful spots. Continue drive to Sonmarg 2690 Meters (Meadow of Gold). One can ride on horse to visit to Thajiwas Glacier where snow remains round the year and Sonmarg is known as Gateway of Ladakh. In the evening return to Hotel. Overnight and dinner in Hotel."
+      },
+      {
+        "day": 3,
+        "title": "Srinagar– Gulmarg -Srinagar",
+        "description": "After breakfast drive to Gulmarg (Meadow of Flowers) 2730 Mts above sea level. The distance of 60 kms will be covered in about 2 hrs. Gulmarg has one of the best Ski slopes in the world and highest golf course of the world with 18 holes. One can also have the view of Nanga Parbhat if weather permits. The view enroute from Tangmarg to Gulmarg is fascinating. One can also have a short trek up to Khilangmarg, which can be covered in about 3 hrs. Also enjoy sledge riding on snow. Chair Lifts for mountain ride are also available. Dinner and overnight stay in Hotel."
+      },
+      {
+        "day": 4,
+        "title": "Departure from Srinagar",
+        "description": "After breakfast, leave from Srinagar and drive to Pahalgam 2440 Mtrs (Vale of Kashmir) on the way visit Saffron fields and Avantipur ruins which is eleven hundred years old temple. Finally by the lunch time you will reach Pahalgam which is the most famous place for Indian Film Industry. After lunch enjoy the nature charm of the valley. Dinner and Overnight in Hotel"
+      },
+      {
+        "day": 5,
+        "title": "Srinagar airport drop",
+        "description": "After breakfast checkout from hotel transfers to airport. Return back with sweet memories"
+      }
+    ],
+    "inclusions": [],
+    "exclusions": [],
+    "heroImage": {
+      "url": "/images/kashmir.webp",
+      "alt": "Snow-capped peaks and green valley in Kashmir"
+    },
+    "gallery": [],
+    "faqs": [],
+    "seo": {},
+    "isPublished": true,
+    "isFeatured": false,
+    "sortOrder": 6
+  }
+]
