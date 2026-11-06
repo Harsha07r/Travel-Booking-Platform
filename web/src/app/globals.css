@@ -43,6 +43,8 @@ body {
   font-size: 1rem;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  /* Cormorant's default numerals look like letters (1 as "I", 0 as "O"); use lining figures everywhere. */
+  font-variant-numeric: lining-nums;
 }
 
 img {
